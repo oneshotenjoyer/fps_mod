@@ -8,8 +8,8 @@
 		"modguy07"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.youtube.com/watch?v=T14DQkV0fEQ",
+		"sources": "https://github.com/oneshotenjoyer/fps_mod"
 	},
 	"license": "MPL-2.0",
 	"icon": "assets/fps-display-mod/icon.png",
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"net.modguy07.fpsmod.FPSDisplayModDataGenerator"
+		],
+		"client": [
+			"net.modguy07.fpsmod.Display"
 		]
 	},
 	"mixins": [
