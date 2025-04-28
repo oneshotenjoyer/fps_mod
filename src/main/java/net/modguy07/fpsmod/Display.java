@@ -11,6 +11,7 @@ import net.minecraft.client.gui.*;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.client.util.InputUtil;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import org.lwjgl.glfw.GLFW;
@@ -39,7 +40,9 @@ public class Display implements ClientModInitializer
     private static void render(DrawContext cont, RenderTickCounter renderTickCounter) {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (settingsKey.isPressed()) {
-                //client.setScreen(); // to be implemented
+                client.setScreen(
+                        new SettingsMenu(Text.empty())
+                ); // to be implemented
             }
         });
         MinecraftClient client = MinecraftClient.getInstance();
